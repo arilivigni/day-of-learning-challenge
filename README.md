@@ -11,13 +11,13 @@ This public template is your team's starting repository and challenge guide.
 It contains **only this README**, not a playable game or canvas extension.
 Your facilitator will provide the known-good canvas starter separately.
 
-Read the [attendee website](https://arilivigni.github.io/monas-octoverse-arcade/)
+Read the [attendee website](https://ghlearn.github.io/monas-octoverse-arcade/)
 for the same challenge in website form.
 
 **Create your team's repository**
 
 1. Have one teammate open
-   [this template repository](https://github.com/arilivigni/day-of-learning-challenge)
+   [this template repository](https://github.com/ghlearn/day-of-learning-challenge)
    and select **Use this template > Create a new repository**.
 2. Choose the owning account or organization and a repository name for your
    team. Make sure the judges can access it.
