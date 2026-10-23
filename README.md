@@ -68,16 +68,17 @@ not the limit.
 
 ## Teams
 
-Up to 150 people may take part, so everyone builds in a team.
+Up to 150 people may take part. Plan attendance in multiples of 6 so everyone
+can join a complete team.
 
-- **4-6 people per team:** minimum 4, maximum 6. Aim for 5.
+- **Exactly 6 people per team:** no smaller or larger teams.
 - **Choose a team name** during kickoff. Use it on your submission.
 - **One shared repository:** keep your team's extension in one repository
   that judges can open.
 
-With 150 participants, teams of 5 make about 30 teams (25-38, depending on
-team size). If your group has fewer than 4 people, join another group. If it
-has more than 6, split into two teams.
+With 150 participants, form 25 teams of 6, for 25 team submissions. If your
+group has fewer than 6 people, join another group. If it has more than 6,
+split into teams of exactly 6.
 
 ## Canvas extension
 
@@ -107,7 +108,7 @@ The workshop lasts **2 hours**.
 
 | Time | Phase | What to do |
 | --- | --- | --- |
-| 0:00-0:15 | Kickoff & teams | See the target canvas extension, get the starter prompt and rubric, form teams of 4-6, and choose a team name. |
+| 0:00-0:15 | Kickoff & teams | See the target canvas extension, get the starter prompt and rubric, form teams of exactly 6, and choose a team name. |
 | 0:15-0:25 | Install the starter | Install and open the facilitator-provided starter canvas template. Confirm it runs. |
 | 0:25-1:15 | Build your game | Start from the prompt, then build your team's version inside the canvas with the Copilot App. |
 | 1:15-1:35 | Power-up | Pick a stretch goal: leaderboard, sound, animation, theming, or your own idea. |
