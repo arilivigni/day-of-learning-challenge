@@ -61,7 +61,20 @@ Every team starts with this prompt in the Copilot App. It sets the baseline,
 not the limit.
 
 ```text
-In the Mona's Octoverse Arcade starter canvas already included in your team's challenge repository, build the game described here. Keep the existing extension registration in extension.mjs; implement the game in game.html with HTML, CSS, and vanilla JavaScript, with no external build step. Make a game where Mona the Octocat collects green commit-squares while dodging red bugs. Track the score, increase speed over time, and show a game-over screen with a restart button. Copilot appears as a sidekick that gives an encouraging tip every 10 points. Make sure the canvas still opens and the game is playable.
+In the Mona's Octoverse Arcade starter canvas already included
+in your team's challenge repository, build the game described here.
+
+Keep the existing extension registration in extension.mjs;
+implement the game in game.html with HTML, CSS, and vanilla
+JavaScript, with no external build step.
+
+Make a game where Mona the Octocat collects green commit-squares
+while dodging red bugs. Track the score, increase speed over
+time, and show a game-over screen with a restart button.
+
+Copilot appears as a sidekick that gives an encouraging tip
+every 10 points. Make sure the canvas still opens and the game
+is playable.
 ```
 
 **The baseline**
