@@ -25,9 +25,10 @@ for the same challenge in website form.
    the workshop. As part of the GitHub Hands-on Labs environment, a
    repository is already set up for your team, ready to add as a Project.
 
-   > **Note:** All team members should be able to log in with the one
-   > account provided to work on the repository, or you can have one
-   > teammate make the changes.
+   > [!NOTE]
+   > All team members should be able to log in with the one account
+   > provided to work on the repository, or you can have one teammate make
+   > the changes.
 3. **Add your team's repository as a Project in the GitHub Copilot app.**
    In the app's sidebar, open **Projects** and create a new **Project**
    named for your team. In the repository picker, select the repository
