@@ -15,23 +15,35 @@ in the starter's `game.html`.
 Read the [attendee website](https://ghlearn.github.io/monas-octoverse-arcade/)
 for the same challenge in website form.
 
-**Create your team's repository**
+**Prerequisites, login, and add project to the Copilot app**
 
-1. Have one teammate open
-   [this template repository](https://github.com/ghlearn/day-of-learning-challenge)
-   and select **Use this template > Create a new repository**.
-2. Choose the owning account or organization and a repository name for your
-   team. Make sure the judges can access it.
-3. Invite your teammates as collaborators and share the new repository URL.
-   Everyone should work in this one shared repository, rather than creating
-   separate copies.
-4. Clone your team's repository and open it in the Copilot App as a Project.
-   Start a session in that repository, then ask Copilot to open the
-   **Mona's Octoverse Arcade starter** canvas. Confirm its welcome screen
-   appears before building. The project-scoped extension is already in this
-   repository; you do not need a separate starter download.
-5. Commit and push your team's extension changes so the submitted repository
-   contains the version shown in your demo.
+1. **Install the GitHub Copilot app.** Download and install it from
+   [github.com/features/copilot](https://github.com/features/copilot).
+2. **Log in with your provided lab account.** Open the GitHub Copilot app
+   and sign in using the **GitHub Hands-on Labs** account provided to you.
+   Use that account, rather than your personal GitHub account, throughout
+   the workshop. As part of the GitHub Hands-on Labs environment, a
+   repository is already set up for your team, ready to add as a Project.
+
+> [!NOTE]
+   > All team members should be able to log in with the one account
+   > provided to work on the repository, or you can have one teammate make
+   > the changes.
+3. **Add your team's repository as a Project in the GitHub Copilot app.**
+   In the app's sidebar, open **Projects** and create a new **Project**
+   named for your team. In the repository picker, select the repository
+   already set up in your GitHub Hands-on Labs environment, not the original
+   `ghlearn/day-of-learning-challenge` template. Let the Project prepare the
+   repository and wait for its reply that it is ready.
+
+   In the **Project** chat, ask Copilot to start a coding session in your
+   team's repository and open the **Mona's Octoverse Arcade starter** canvas.
+   Confirm its welcome screen appears and its button responds before building.
+   The project-scoped extension is already in the repository; you do not need
+   a separate starter download.
+
+Commit and push your team's extension changes so the submitted repository
+contains the version shown in your demo.
 
 **Challenge topics:** [Prompt](#prompt) | [Teams](#teams) |
 [Canvas extension](#canvas-extension) | [Agenda](#agenda) |
