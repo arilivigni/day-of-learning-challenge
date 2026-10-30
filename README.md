@@ -7,15 +7,19 @@ the hero and Copilot as the sidekick. Ship it as a **Copilot App canvas
 extension** that installs and opens inside the Copilot App. Every team starts
 from the same prompt, then makes the game its own.
 
-This public template is your team's starting repository and challenge guide.
+This repository is the shared starter and challenge guide. Your GitHub
+Hands-on Labs environment already provides your team's repository based on
+this template; use that repository rather than creating another one.
 It includes a minimal, working Copilot App canvas extension starter, not a
 finished game. Start from it, confirm the canvas opens, then build your game
 in the starter's `game.html`.
 
-Read the [attendee website](https://ghlearn.github.io/monas-octoverse-arcade/)
-for the same challenge in website form.
+**Workshop links:** [Attendee instructions](https://gh.io/dol-instructions) |
+[Discussion and submissions](https://gh.io/dol-discussion).
+This README is the source of truth for the shared prompt and challenge rules;
+the attendee website and Discussion follow the same guidance.
 
-**Prerequisites, login, and add project to the Copilot app**
+## Prerequisites, login, and add project to the Copilot app
 
 1. **Install the GitHub Copilot app.** Download and install it from
    [github.com/features/copilot](https://github.com/features/copilot).
@@ -26,9 +30,10 @@ for the same challenge in website form.
    repository is already set up for your team, ready to add as a Project.
 
 > [!NOTE]
-   > All team members should be able to log in with the one account
-   > provided to work on the repository, or you can have one teammate make
-   > the changes.
+> All team members should be able to log in with the one account
+> provided to work on the repository, or you can have one teammate make
+> the changes.
+
 3. **Add your team's repository as a Project in the GitHub Copilot app.**
    In the app's sidebar, open **Projects** and create a new **Project**
    named for your team. In the repository picker, select the repository
@@ -55,14 +60,22 @@ contains the version shown in your demo.
 Every team starts with this prompt in the Copilot App. It sets the baseline,
 not the limit.
 
-> Build the game in the Mona's Octoverse Arcade starter canvas in this
-> repository. Inside the canvas, create a game
-> where Mona the Octocat collects green commit-squares while dodging red bugs.
-> Track the score, increase speed over time, and show a game-over screen with
-> a restart button. Copilot appears as a sidekick that gives an encouraging
-> tip every 10 points. The extension must install cleanly and open as a
-> playable canvas. Keep it to HTML/CSS/vanilla JS inside the canvas - no
-> external build step.
+```text
+In the Mona's Octoverse Arcade starter canvas already included
+in your team's challenge repository, build the game described here.
+
+Keep the existing extension registration in extension.mjs;
+implement the game in game.html with HTML, CSS, and vanilla
+JavaScript, with no external build step.
+
+Make a game where Mona the Octocat collects green commit-squares
+while dodging red bugs. Track the score, increase speed over
+time, and show a game-over screen with a restart button.
+
+Copilot appears as a sidekick that gives an encouraging tip
+every 10 points. Make sure the canvas still opens and the game
+is playable.
+```
 
 **The baseline**
 
@@ -121,39 +134,50 @@ In the Copilot App session opened on your team's repository, ask:
 
 The starter's button confirms that the canvas is interactive. Then paste the
 challenge prompt above and build the game in `game.html`. Use HTML, CSS, and
-vanilla JavaScript inside the canvas, with **no external build step**. The
-starter handles canvas registration and serving so your team can focus on the
-game and still learn how the extension fits together.
+vanilla JavaScript inside the canvas, with **no external build step**. Keep
+the game self-contained: do not add a package manifest, dependencies, or
+external assets. The starter handles canvas registration and serving so your
+team can focus on the game and still learn how the extension fits together.
+
+**Loading is the setup step:** opening your team's repository as a Project
+loads the included project-scoped extension. You do not need a separate
+starter download or to reinstall it for the demo. The installation options
+above are for trying the extension in another environment.
 
 ## Agenda
 
-The workshop lasts **2 hours**.
+The workshop lasts **2 hours**. All times below are elapsed from the start
+of the workshop, not times of day. Install the app and log in before kickoff.
 
 | Time | Phase | What to do |
 | --- | --- | --- |
 | 0:00-0:15 | Kickoff & teams | See the target canvas extension, get the starter prompt and rubric, form teams of exactly 6, and choose a team name. |
-| 0:15-0:25 | Open the starter | Open the team repository as a Copilot App Project, open the included starter canvas, and confirm its button responds. |
+| 0:15-0:25 | Open the starter | Add the pre-provisioned lab repository as a Copilot App Project, open the included starter canvas, and confirm its button responds. |
 | 0:25-1:15 | Build your game | Start from the prompt, then build your team's version inside the canvas with the Copilot App. |
 | 1:15-1:35 | Power-up | Pick a stretch goal: leaderboard, sound, animation, theming, or your own idea. |
 | 1:35-2:00 | Record & submit | Record a demo video of up to 90 seconds and post your submission in the challenge Discussion before the workshop ends. |
 
 ## Submit
 
-Before the workshop ends at **2:00**, one teammate posts your team's
-submission as a **single comment in the challenge Discussion**. Your
-facilitator will share the Discussion link; do not submit in a separate
-Discussion in your team's repository.
+Before the end of the **two-hour workshop**, one teammate posts your team's
+submission as a **single comment in the
+[challenge Discussion](https://gh.io/dol-discussion)**. Do not submit in a
+separate Discussion in your team's repository.
 
 Include all four items:
 
 1. **Team name:** the name your team chose at kickoff.
 2. **Description:** a few sentences about your game, your creative spin, and
    your power-up.
-3. **Demo video:** up to **90 seconds**. Show the extension installing,
-   opening as a canvas, and being played. Attach the video to your comment
-   or add a link that judges can access.
+3. **Demo video:** up to **90 seconds**. Show your team's repository open as
+   a Project with the included extension loaded, open the canvas, and play
+   the game. No separate reinstallation is required. Attach the video to
+   your comment or add a link that judges can access.
 4. **Repository link:** your team's repository containing the extension
    folder. Make sure judges can access it and that your changes are pushed.
+
+The repository must contain the version shown in your demo. Keep any lab
+credentials out of your video and submission.
 
 You can copy this into your submission comment and replace the placeholders:
 
