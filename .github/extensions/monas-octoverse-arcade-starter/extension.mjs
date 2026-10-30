@@ -12,7 +12,15 @@ let session;
 
 async function startServer() {
   const server = createServer(async (req, res) => {
-    const url = new URL(req.url, "http://127.0.0.1");
+    let url;
+    try {
+      url = new URL(req.url, "http://127.0.0.1");
+    } catch {
+      res.writeHead(400, { "Content-Type": "text/plain; charset=utf-8" });
+      res.end("Bad request");
+      return;
+    }
+
     if (req.method !== "GET" || (url.pathname !== "/" && url.pathname !== "/index.html")) {
       res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
       res.end("Not found");
@@ -45,21 +53,29 @@ const canvas = createCanvas({
   displayName: TITLE,
   description: "Open the starter welcome screen for the Mona's Octoverse Arcade game challenge.",
   open: async (ctx) => {
-    let entry = servers.get(ctx.instanceId);
-    if (!entry) {
-      entry = await startServer();
-      servers.set(ctx.instanceId, entry);
+    let startup = servers.get(ctx.instanceId);
+    if (!startup) {
+      startup = startServer();
+      servers.set(ctx.instanceId, startup);
+      startup.catch(() => {
+        if (servers.get(ctx.instanceId) === startup) {
+          servers.delete(ctx.instanceId);
+        }
+      });
     }
+
+    const entry = await startup;
     return { title: TITLE, url: entry.url, status: "Starter ready" };
   },
   onClose: async (ctx) => {
-    const entry = servers.get(ctx.instanceId);
-    if (entry) {
-      servers.delete(ctx.instanceId);
-      await new Promise((resolve, reject) => {
-        entry.server.close((error) => error ? reject(error) : resolve());
-      });
-    }
+    const startup = servers.get(ctx.instanceId);
+    if (!startup) return;
+
+    servers.delete(ctx.instanceId);
+    const entry = await startup;
+    await new Promise((resolve, reject) => {
+      entry.server.close((error) => error ? reject(error) : resolve());
+    });
   },
 });
 
