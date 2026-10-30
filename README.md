@@ -25,7 +25,7 @@ for the same challenge in website form.
    the workshop. As part of the GitHub Hands-on Labs environment, a
    repository is already set up for your team, ready to add as a Project.
 
-   > [!NOTE]
+> [!NOTE]
    > All team members should be able to log in with the one account
    > provided to work on the repository, or you can have one teammate make
    > the changes.
